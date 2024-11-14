@@ -1,27 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.quize{
+  text-align: center;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.quize >h1{
+  text-shadow: 4px 2px 15px #4d4b4b;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.quize-card{
+  text-align: left;
+  max-width: 500px;
+  box-shadow: 10px 7px 24px #4d4b4b;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #cfcbcf;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.question-form>.submit{
+width: 100%;
+border:none;
+background-color:#4c494b;
+color: white;
+border-radius:5px;
+padding: 7px;
+margin-top: 20px;
+}
+.quize-card .radio{
+  margin:9px 0;
+  display: block;
+}
+.quize-card>.restart-quiz{
+  width: 100%;
+border:none;
+background-color:#4c494b;
+color: white;
+border-radius:5px;
+padding: 7px;
+margin-top: 20px;
 }
